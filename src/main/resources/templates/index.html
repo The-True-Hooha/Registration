@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xml:th="http://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>welcome</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/boostrap.min.css"/>
 </head>
 <body>
-    <h1> welcome to the test environment </h1>
+    <div class="container text-center">
+        <div>
+            <h1> welcome, how're you doing today </h1>
+        </div>
+        <div>
+            <h3><a th:href="@{/register}"> Sign Up</a></h3>
+        </div>
+    </div>
 </body>
 </html>
