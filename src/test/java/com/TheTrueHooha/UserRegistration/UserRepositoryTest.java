@@ -38,4 +38,14 @@ public class UserRepositoryTest {
 
     }
 
+    //method test to find user by email
+    @Test
+    void testFindUserByEmail () {
+        String email = "ogun@Gmail.com"; //test will not pass cos email is not in the database
+
+        UserParameters userParameters = userRepository.findByEmail(email);
+
+        assertThat(userParameters).isNotNull();
+    }
+
 }
