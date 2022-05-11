@@ -1,1 +1,1 @@
-Will be updated later, abeg don't stress me
+Built a registration system with Java springboot connected to a mysql database
